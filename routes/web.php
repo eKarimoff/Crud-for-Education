@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('auth.register');
 });
 
-Route::resource('students', StudentController::class);
+Route::resource('/students', StudentController::class);
 
     
 Auth::routes();
